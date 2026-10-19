@@ -1,0 +1,53 @@
+{
+  "name": "devmatch",
+  "version": "1.0.0",
+  "description": "developer's match maker",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "imports": {
+    "#config/*": "./src/config/*",
+    "#middlewares/*": "./src/middlewares/*",
+    "#models/*": "./src/models/*",
+    "#routes/*": "./src/routes/*",
+    "#services/*": "./src/services/*",
+    "#utils/*": "./src/utils/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akash010220221/devMatch.git"
+  },
+  "author": "Akash Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akash010220221/devMatch/issues"
+  },
+  "homepage": "https://github.com/akash010220221/devMatch#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.9.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.1",
+    "multer": "^2.1.1",
+    "passport": "^0.7.0",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0",
+    "rate-limit-redis": "^4.3.1",
+    "razorpay": "^2.9.6",
+    "redis": "^5.11.0",
+    "resend": "^6.9.4",
+    "socket.io": "^4.8.1",
+    "validator": "^13.15.15",
+    "web-push": "^3.6.7"
+  }
+}

@@ -1,0 +1,15 @@
+name: Keep Render Backend Alive
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping Render devMatch health endpoint
+        run: |
+          curl -s https://devmatch-backend-awhk.onrender.com/api/health || echo "Failed"
